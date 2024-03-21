@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+nav ul li img {
+  width: 45px; /* Set a fixed width */
+  height: auto;
+  vertical-align: middle; /* Align the image vertically */
+}
+header nav ul li img {
+  margin-right: auto; /* Push the image to the leftmost side */
+}
+
+header{
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+}
+
+header nav ul, footer nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li, footer nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a, footer nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: inline;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  justify-content: center;
+  width: 100%;
+  /* justify-content: center; */
+}
+
+footer > nav{
+  
+}

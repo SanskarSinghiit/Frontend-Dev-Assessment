@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dummy Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <!-- <script src="script.js"></script> -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><img src="logo.png" alt="not_found"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <form id="userDataForm">
+      <h2>User data</h2>
+      <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div>
+        <label for="gender">Gender:</label>
+        <label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="female">Female</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+      </div>
+      <div>
+        <label for="skills">Skills:</label>
+        <select id="skills" name="skills" required>
+          <option value="JS">JavaScript</option>
+          <option value="React">React</option>
+          <option value="API">API</option>
+          <option value="Backend">Backend</option>
+        </select>
+      </div>
+      <button type="submit" onclick="getPopup()">Submit</button>
+    </form>
+  </main>
+  
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
